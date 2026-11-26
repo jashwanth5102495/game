@@ -1,0 +1,31 @@
+[package]
+name = "whisper-gateway"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "whisper-server"
+path = "src/main.rs"
+
+[dependencies]
+whisper-common = { path = "../common" }
+whisper-identity = { path = "../identity" }
+whisper-friends = { path = "../friends" }
+whisper-houses = { path = "../houses" }
+whisper-world = { path = "../world" }
+whisper-multiplayer = { path = "../multiplayer" }
+whisper-messaging = { path = "../messaging" }
+whisper-privacy = { path = "../privacy" }
+
+tokio = { workspace = true }
+axum = { workspace = true }
+tower = { workspace = true }
+tower-http = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+uuid = { workspace = true }
+chrono = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+sqlx = { workspace = true }
+dotenvy = { workspace = true }

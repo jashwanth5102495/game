@@ -1,0 +1,17 @@
+[package]
+name = "whisper-friends"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+whisper-common = { path = "../common" }
+whisper-identity = { path = "../identity" }
+sqlx = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+uuid = { workspace = true }
+chrono = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
+rand = { workspace = true }
+base64 = { workspace = true }

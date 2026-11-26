@@ -1,0 +1,12 @@
+[package]
+name = "whisper-world"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+whisper-common = { path = "../common" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+uuid = { workspace = true }
+tracing = { workspace = true }
+dashmap = { workspace = true }
